@@ -8,5 +8,13 @@ let element = React.createElement(
     React.createElement(
       'h3', {}, "React sample page."
     ),
+    React.createElement(
+      'ul', {}, [
+        React.createElement(
+          'li', {}, "First item."
+        ),
+        React.createElement
+      ]
+    )
   ]);
       ReactDOM.render(element, dom);
