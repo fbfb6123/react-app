@@ -9,6 +9,11 @@
   <body>
     <h1>React</h1>
     <div id="root">wait...</div>
-    <script src="./script.js"></script>
+    <script> dom = document.querySelector('#root');
+    let element = React.createElement( 'p', {}, 'Hello React Application!');
+</script>
+      ReactDOM.render(element, dom);
+    <!-- <script src="./script.js"></script> -->
+    
   </body>
 </html>
