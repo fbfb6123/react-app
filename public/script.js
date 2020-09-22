@@ -13,7 +13,12 @@ let element = React.createElement(
         React.createElement(
           'li', {}, "First item."
         ),
-        React.createElement
+        React.createElement(
+          'li', {}, "Second item."
+        ),
+        React.createElement(
+          'li', {}, "Third item."
+        ),
       ]
     )
   ]);
