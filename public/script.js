@@ -1,5 +1,9 @@
 let dom = document.querySelector('#root');
 
 let element = React.createElement( 
-  'div', {}, 'Hello React Application!');
+  'div', {}, '[
+    React.createElement(
+      
+    )
+  ]);
       ReactDOM.render(element, dom);
