@@ -20,6 +20,6 @@ let element = React.createElement(
           'li', {}, "Third item."
         ),
       ]
-    )
+    ),
   ]);
       ReactDOM.render(element, dom);
