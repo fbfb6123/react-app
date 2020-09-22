@@ -6,7 +6,7 @@ let element = React.createElement(
       'h2', {}, "Hello!"
     ),
     React.createElement(
-      'h3', {}
-    )
+      'h3', {}, "React sample page."
+    ),
   ]);
       ReactDOM.render(element, dom);
