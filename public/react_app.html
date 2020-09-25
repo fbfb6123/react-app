@@ -15,14 +15,19 @@
     let dom = document.querySelector('#root');
 
     let message = "新しいメッセージです";
-    let link = "http:google.com";
+    const msg_s = {
+      fontSize:"20pt",
+      color:"red",
+      border:"1px solid blue"
+    }
+
 
     let el = (
       <div>
-        <h2><a href={link}>リンク</a></h2>
-        <p>{message}</p>
+     <p style={msg_s}>{me}
       </div>
     );
+
 
     ReactDOM.render(el, dom);
     </script>
