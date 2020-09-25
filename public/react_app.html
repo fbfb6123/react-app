@@ -33,6 +33,12 @@
       return <p style={style}>{msg}</p>;
     }
 
+    let el = (
+      <div>
+        {printMsg('最初のメッセージ', 30, '#ddd')}
+        {printMsg('次のメッセージ', 20, '#aaa')}
+        {printMsg('最後のメッセージでした', 14, '#333')}
+    )
 
     ReactDOM.render(el, dom);
     </script>
