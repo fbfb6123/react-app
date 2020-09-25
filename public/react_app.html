@@ -23,7 +23,15 @@
       border:"2px solid green"
     }
 
-    let printMsg = function ()
+    let printMsg = function (msg, size, color) {
+      const style = {
+        fontSize: size + "pt",
+        fontWeight:'700',
+        color: color,
+        border: "1px solid" + color
+      };
+      
+    }
 
 
     ReactDOM.render(el, dom);
