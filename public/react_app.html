@@ -35,8 +35,10 @@
 
     let el = (
       <div>
-        {flg &&
-            <p style={msg}>{message}</p>
+        {flg ?
+            <p style={msg_true}>{message_true}</p>
+        :
+           <p style={msg_false}>{messeage_false}</p>
         }
         </div>
     )
