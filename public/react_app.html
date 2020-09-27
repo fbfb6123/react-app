@@ -14,15 +14,22 @@
     <script type="text/babel">
     let dom = document.querySelector('#root');
 
-    
+    const list = {
+      fontSize: "18pt",
+      padding: "5px 50px",
+    }
+
+    let data = [
+      <li>One</li>
+      <li>Two</li>
+      <li>Three</li>
+    ];
 
     let el = (
       <div>
-        {flg ?
-            <p style={msg_true}>{message_true}</p>
-        :
-            <p style={msg_false}>{message_false}</p>
-        }
+        <ul style={list}>
+          {data}
+        </ul>  
         </div>
     );
 
