@@ -14,28 +14,24 @@
     <script type="text/babel">
     let dom = document.querySelector('#root');
 
-    let message = "メッセージを表示します。"
+    let message_true = "メッセージを表示します。";
+    let messeage_false ="メッセージはありません";
 
-    const msg = {
+    const msg_true = {
       fontSize:"20pt",
       fontWeight:"bold",
       color:"red",
       border:"2px solid green"
     }
 
-    let flg = false; // falseだと非表示になる
+    const msg_false = {
+      fontSize:"16pt",
+      fontWeight:"plain",
+      color:"white",
+      border:"blue"
+    }
 
-    
-    //メッセージのエレメントを作成して返すPrintMsg
-    // let printMsg = function (msg, size, color) {
-    //   const style = {
-    //     fontSize: size + "pt",
-    //     fontWeight:'700',
-    //     color: color,
-    //     border: "1px solid" + color
-    //   };
-    //   return <p style={style}>{msg}</p>;
-    // }
+    let flg = true; // falseだと非表示になる
 
     let el = (
       <div>
