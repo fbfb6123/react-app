@@ -15,7 +15,7 @@
     let dom = document.querySelector('#root');
 
     let message_true = "メッセージを表示します。";
-    let messeage_false ="メッセージはありません";
+    let message_false ="メッセージはありません";
 
     const msg_true = {
       fontSize:"20pt",
@@ -31,14 +31,14 @@
       border:"blue"
     }
 
-    let flg = true; // falseだと非表示になる
+    let flg = false; // falseだと非表示になる
 
     let el = (
       <div>
         {flg ?
             <p style={msg_true}>{message_true}</p>
         :
-           <p style={msg_false}>{messeage_false}</p>
+           <p style={msg_false}>{message_false}</p>
         }
         </div>
     )
