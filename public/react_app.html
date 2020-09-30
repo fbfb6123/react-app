@@ -41,8 +41,11 @@
         <div>
           <input type="text" id="input" style={input}
           onChange={doChange} />
-          
-       </div>     
+          <button onClick={doAction} style={input}>
+            Click
+          </button>
+        </div>     
+       </div> 
      );
      ReactDOM.render(el, dom);
    };
