@@ -37,9 +37,11 @@
      counter++;
      let el = (
        <div>
-        <p onClick={doAction} style={p}>
-            count: {counter}
-        </p>
+        <p style={p}>{message}</p>
+        <div>
+          <input type="text" id="input" style={input}
+          onChange={doChange} />
+          
        </div>     
      );
      ReactDOM.render(el, dom);
