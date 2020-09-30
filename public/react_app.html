@@ -21,9 +21,18 @@
 
    var counter = 0;
 
-   
+   setInterval(() => {
+     counter++;
+     let el = (
+       <div>
+        <p style={p}>count: {counter}</p>
+       </div> 
+     );
+     ReactDOM.render(el, dom);
+   }, 1000);
 
-    ReactDOM.render(el, dom);
+
+    
     </script>
   </body>
 </html>
