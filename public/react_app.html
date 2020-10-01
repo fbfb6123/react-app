@@ -14,44 +14,8 @@
     <script type="text/babel">
     let dom = document.querySelector('#root');
 
-    //フォームの値を利用する
-    const p = {
-      fontSize:"20pt",
-      padding: "5px 10px",
-    };
-
-    const input = {
-      fontSize: "16pt",
-      padding: "5px 10px",
-    }
-
-    let message = 'お名前をどうぞ:';
-    let in_val = '';
-
-    //フォームの値をmessageに渡す
-    let doChange = (event)=> {
-      in_val = event.target.value;
-      message = 'こんにちは, ' + in_val + 'さん';
-    };
-
-
-    //入力フィールドとプッシュボタン
-   let doAction = (event)=>{
-     let el = (
-       <div>
-        <p style={p}>{message}</p>
-        <div>
-          <input type="text" id="input" style={input}
-          onChange={doChange} />
-          <button onClick={doAction} style={input}>
-            Click
-          </button>
-        </div>     
-       </div> 
-     );
+    
      ReactDOM.render(el, dom);
-   };
-   doAction();
     
     </script>
   </body>
