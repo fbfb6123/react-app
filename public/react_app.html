@@ -27,11 +27,11 @@
       boldergroundColor: "cyan"
     };
 
-    
+
 
     //関数コンポネート
     function Welcome(props) {
-      return <p style={msg}>Hello React</p>;
+      return <p style={props.style}>Hello, {props.name}!!</p>;
     }
 
     //表示するJSX
