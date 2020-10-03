@@ -17,14 +17,14 @@
     const msg1 = {
       fontSize: "20pt",
       padding:"10px",
-      bolder: "double 5px magenta"
+      border: "double 5px magenta"
     };
 
     const msg2 = {
       fontSize: "16pt",
       fontWeight:"bold",
       padding:"10px",
-      boldergroundColor: "cyan"
+      backgroundColor: "cyan"
     };
 
 
@@ -38,6 +38,7 @@
     let el = (
       <div>
         <Welcome name= "Taro" style={msg1} />
+        <Welcome name= "Hanako" style={msg2} />
       </div>  
     );
      ReactDOM.render(el, dom);
