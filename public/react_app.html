@@ -21,14 +21,21 @@
       border: "solid 5px yellow"
     };
 
-    
+    class Hello extends React.Component {
+
+    constructor(props) {
+      super(props);
+    }
+
+    render() {
+      return <p style={msg}>Hello!!</p>;
+    }
+  }
 
     //表示するJSX
     let el = (
       <div>
-        <Calc number="100" />
-        <Calc number="200" />
-        <Calc number="300" />
+        <Hello />
       </div>  
     );
      ReactDOM.render(el, dom);
