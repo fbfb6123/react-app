@@ -30,7 +30,14 @@
       this.width = props.w;
       this.height = props.h;
       this.color = props.c;
-      
+      this.style = {
+        bankgroundColor:this.color,
+        position:"absolute",
+        left:this.x + "px",
+        top:this.y + "px",
+        width:this.width + "px",
+        height:this.height + "px"
+      }
     }
 
     render() {
