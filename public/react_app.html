@@ -23,6 +23,16 @@
     color = "white";
     style = {};
 
+    constructor(props) {
+      super(props);
+      this.x = props.x;
+      this.y = props.y;
+      this.width = props.w;
+      this.height = props.h;
+      this.color = props.c;
+      
+    }
+
     render() {
       return <p style={msg}>Hello!!</p>;
     }
