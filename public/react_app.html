@@ -14,7 +14,7 @@
     <script type="text/babel">
     let dom = document.querySelector('#root');
 
-    class Hello extends React.Component {
+    class React extends React.Component {
 
     x = 0;
     y = 0;
@@ -41,14 +41,15 @@
     }
 
     render() {
-      return <p style={msg}>Hello!!</p>;
+      return <p style={this.style}>Hello!!</p>;
     }
   }
 
     //表示するJSX
     let el = (
       <div>
-        <Hello />
+        <React x="100" y="100" w="100" h="100" c="cyan" />
+        <React x="150" y="150" w="100" h="100" c="magenta" />
       </div>  
     );
      ReactDOM.render(el, dom);
