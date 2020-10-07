@@ -14,7 +14,7 @@
     <script type="text/babel">
     let dom = document.querySelector('#root');
 
-    class React extends React.Component {
+    class Rect extends React.Component {
 
     x = 0;
     y = 0;
@@ -48,8 +48,8 @@
     //表示するJSX
     let el = (
       <div>
-        <React x="100" y="100" w="100" h="100" c="cyan" />
-        <React x="150" y="150" w="100" h="100" c="magenta" />
+        <Rect x="100" y="100" w="100" h="100" c="cyan" />
+        <Rect x="150" y="150" w="100" h="100" c="magenta" />
       </div>  
     );
      ReactDOM.render(el, dom);
