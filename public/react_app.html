@@ -14,18 +14,14 @@
     <script type="text/babel">
     let dom = document.querySelector('#root');
 
-    const msg = {
-      fontSize: "20pt",
-      fontWeight: "bold",
-      padding: "10px",
-      border: "solid 5px yellow"
-    };
-
     class Hello extends React.Component {
 
-    constructor(props) {
-      super(props);
-    }
+    x = 0;
+    y = 0;
+    width = 0;
+    height = 0;
+    color = "white";
+    style = {};
 
     render() {
       return <p style={msg}>Hello!!</p>;
