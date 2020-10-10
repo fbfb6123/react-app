@@ -31,10 +31,14 @@ class Rect extends Component {
     this.style = {
       backgroundColor:this.color,
       position:"absolute",
-      left:this.x + "px";
+      left:this.x + "px",
+      top:this.y + "px",
+      width:this.width + "px",
+      height.this.height + "px"
     }
   }
-    </div>;
+  render() {
+    return <div style={this.style}></div>;
   }
 }
 
