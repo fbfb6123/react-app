@@ -14,8 +14,13 @@ class App extends Component {
 }
 
 class Rect extends Component {
-  
-}
+  x = 0;
+  y = 0;
+  width = 0;
+  height =0;
+  color ="white";
+  style = {};
+
   constructor(props) {
     super();
     this.title = props.title;
