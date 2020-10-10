@@ -23,12 +23,13 @@ class Rect extends Component {
 
   constructor(props) {
     super();
-    this.title = props.title;
-    this.message = props.message;
+    this.x = props.x;
+    this.y = props.y;
+    this.width = props.w;
+    this.height = props.h;
+    this.color = props.c;
+    
   }
-
-      <h1>{this.title}</h1>
-      <p>{this.message}</p>
     </div>;
   }
 }
