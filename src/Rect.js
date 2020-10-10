@@ -31,4 +31,4 @@ class Rect extends Component {
   }
 }
 
-export default App;
+export default Rect;
