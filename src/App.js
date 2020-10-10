@@ -10,6 +10,12 @@ class App extends Component {
       <Rect x="150" y="100" w="150" h="150" c="magenta" />
       <Rect x="100" y="150" w="150" h="150" c="black" />
     </div>;
+  }
+}
+
+class Rect extends Component {
+  
+}
   constructor(props) {
     super();
     this.title = props.title;
