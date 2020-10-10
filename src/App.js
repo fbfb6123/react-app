@@ -34,7 +34,7 @@ class Rect extends Component {
       left:this.x + "px",
       top:this.y + "px",
       width:this.width + "px",
-      height.this.height + "px"
+      height:this.height + "px"
     }
   }
   render() {
