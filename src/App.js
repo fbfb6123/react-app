@@ -28,7 +28,11 @@ class Rect extends Component {
     this.width = props.w;
     this.height = props.h;
     this.color = props.c;
-    
+    this.style = {
+      backgroundColor:this.color,
+      position:"absolute",
+      left:this.x + "px";
+    }
   }
     </div>;
   }
