@@ -13,6 +13,11 @@ class App extends Component {
     borderBottom:"2px solid #900"
   }
 
+  btnStyle = {
+    fontSize:"20pt",
+    padding:"0px 10px"
+  }
+
   constructor(props) {
     super(props);
     this.state = {
