@@ -12,7 +12,13 @@ class App extends Component {
     padding: "5px",
     borderBottom:"2px solid #900"
   }
-  
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      msg:'Hello Component',
+    };
+  }
   render() {
     return <div>
   <h1>React</h1>
