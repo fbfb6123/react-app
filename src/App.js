@@ -5,9 +5,8 @@ import './App.css';
 
 //複数コンポーネント
 class App extends Component {
-  data = [];
-  
-  msgStyle = {
+
+  msgStyle1 = {
     fontSize:"24pt",
     color:"#900",
     margin:"20px 0px",
@@ -15,7 +14,7 @@ class App extends Component {
     borderBottom:"2px solid #900"
   }
 
-  msgStyle = {
+  msgStyle2 = {
     fontSize:"20pt",
     color:"white",
     backgroundColor:"#900",
@@ -51,7 +50,7 @@ class App extends Component {
     return <div>
   <h1>React</h1>
   {this.state.flg ?
-  <p style={this.msgStyle}>{this.state.msg}</p>
+  <p style={this.msgStyle1}>{this.state.msg}</p>
   :
   <p style={this.msgStyle2}>{this.state.msg}です</p>
   }
