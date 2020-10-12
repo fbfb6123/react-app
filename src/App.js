@@ -32,6 +32,7 @@ class App extends Component {
     this.state = {
       counter:0,
       msg:'count start!',
+      flg:true,
     };
     this.doAction = this.doAction.bind(this);
   }
@@ -39,7 +40,8 @@ class App extends Component {
   doAction(e) {
     this.setState((state) => ({
       counter: state.counter + 1,
-      msg: 'count: ' + state.counter
+      msg: state.counter,
+      flg: !state.flg
     }));
   }
 
