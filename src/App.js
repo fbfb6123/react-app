@@ -13,6 +13,15 @@ class App extends Component {
     borderBottom:"2px solid #900"
   }
 
+  msgStyle = {
+    fontSize:"20pt",
+    color:"white",
+    backgroundColor:"#900",
+    margin:"20px 0px",
+    padding:"5px",
+    borderBottom:"2px solid #900"
+  }
+
   btnStyle = {
     fontSize:"20pt",
     padding:"0px 10px"
