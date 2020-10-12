@@ -24,7 +24,7 @@ class App extends Component {
 
   btnStyle = {
     fontSize:"20pt",
-    padding:"0px 10px"
+    padding:"10px"
   }
 
   constructor(props) {
