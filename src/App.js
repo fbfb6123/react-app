@@ -23,19 +23,15 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      counter:0,
-      msg:'count start!',
-      flg:true,
+      list:this.data
     };
     this.doAction = this.doAction.bind(this);
   }
 
   doAction(e) {
     this.setState((state) => ({
-      counter: state.counter + 1,
-      msg: state.counter,
-      flg: !state.flg
-    }));
+      list:this.data
+    };
   }
 
   render() {
