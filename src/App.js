@@ -52,6 +52,7 @@ class App extends Component {
   <p style={this.msgStyle}>{this.state.msg}</p>
   :
   <p style={this.msgStyle2}>{this.state.msg}です</p>
+  }
   <button style={this.btnStyle} onClick={this.doAction}>Click</button>
     </div>;
   }
