@@ -5,27 +5,19 @@ import './App.css';
 
 //複数コンポーネント
 class App extends Component {
+  data = [];
 
-  msgStyle1 = {
+  msgStyle = {
     fontSize:"24pt",
     color:"#900",
     margin:"20px 0px",
     padding: "5px",
-    borderBottom:"2px solid #900"
   }
 
-  msgStyle2 = {
-    fontSize:"20pt",
-    color:"white",
-    backgroundColor:"#900",
-    margin:"20px 0px",
-    padding:"5px",
-    borderBottom:"2px solid #900"
-  }
-
-  btnStyle = {
-    fontSize:"20pt",
-    padding:"10px"
+  area = {
+    width:"500px",
+    height:"500px",
+    border:"1px solid blue"
   }
 
   constructor(props) {
