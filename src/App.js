@@ -48,7 +48,10 @@ class App extends Component {
   render() {
     return <div>
   <h1>React</h1>
+  {this.state.flg ?
   <p style={this.msgStyle}>{this.state.msg}</p>
+  :
+  <p style={this.msgStyle2}>{this.state.msg}です</p>
   <button style={this.btnStyle} onClick={this.doAction}>Click</button>
     </div>;
   }
