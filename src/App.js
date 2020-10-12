@@ -5,6 +5,8 @@ import './App.css';
 
 //複数コンポーネント
 class App extends Component {
+  data = [];
+  
   msgStyle = {
     fontSize:"24pt",
     color:"#900",
