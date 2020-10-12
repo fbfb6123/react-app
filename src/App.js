@@ -29,9 +29,12 @@ class App extends Component {
   }
 
   doAction(e) {
-    this.setState((state) => ({
+    let x = e.pageX;
+    let y = e.pageY;
+    this.data.push({x:x, y:y});
+    this.setState({
       list:this.data
-    };
+    });
   }
 
   render() {
