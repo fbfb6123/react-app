@@ -53,10 +53,6 @@ class App extends Component {
     return <div>
   <h1>React</h1>
   <h2 style={this.msgStyle}>show rect.</h2>
-  <div style={this.area} onClick={this.doAction}>
-    {this.data.map((value)=> this.draw(value))}
-  </div>
-  </div>
   }
 }
 
