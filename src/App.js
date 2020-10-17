@@ -3,61 +3,55 @@ import Rect from './Rect';
 import logo from './logo.svg';
 import './App.css';
 
-//複数コンポーネント
+let data = {title:'Title',
+         message:'this is sample message.'};
+
+//コンテキスストの追加
+const SampleContext = React.createContext(data);
+
 class App extends Component {
-  data = [];
+    newdata = {title:'新しいタイトル',
+        message:'これはプロバイダーで用意した新しいメッセージ'};
 
-  msgStyle = {
-    fontSize:"24pt",
-    color:"#900",
-    margin:"20px 0px",
-    padding: "5px",
-  }
-
-  area = {
-    width:"500px",
-    height:"500px",
-    border:"1px solid blue"
-  }
-
-  constructor(props) {
-    super(props);
-    this.state = {
-      list:this.data
-    };
-    this.doAction = this.doAction.bind(this);
-  }
-
-  doAction(e) {
-    let x = e.pageX;
-    let y = e.pageY;
-    this.data.push({x:x, y:y});
-    this.setState({
-      list:this.data
-    });
-  }
-
-  draw(d) {
-    let s = {
-      position:"absolute",
-      left:(d.x - 25) + "px",
-      top:(d.y - 25) + "px",
-      width:"50px",
-      height:"50px",
-      backgroundColor:"#66f3",
-    };
-    return <div style={s}></div>
-  }
-
-  render() {
-    return <div>
-  <h1>React</h1>
-  <h2 style={this.msgStyle}>show rect.</h2>
-  <div style={this.area} onClick={this.doAction}>
-    {this.data.map((value)=> this.draw(value))}
-  </div>
-  </div>
-  }
+    render() {
+        return (
+            <div>
+                <h1>Context</h1>
+                <Title />
+                <Message />
+                <SampleContext.Provider value={this.newdata}>
+                    <Title />
+                    <Message />
+                </SampleContext.Provider>
+                <Title />
+                <Message />
+            </div>
+        );
+    }
 }
 
+
+class Title extends Component {
+    static contextType = SampleContext;
+
+    render() {
+        return (
+            <div>
+                <h2>{this.context.title}</h2>
+            </div>
+        );
+    }
+}
+
+class Message extends Component {
+    static contextType = SampleContext;
+
+    render(){
+        return (
+            <div>
+                <p>{this.context.message}</p>
+            </div>
+        );
+    }
+}
 export default App;
