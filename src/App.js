@@ -47,6 +47,7 @@ class Message extends Component {
 }
 
 //ストアのコネクト
+//mappingStateでMessegeのコンポーネントで利用するステート(これで上のpropsの中に値が組み込まれている)
 Message = connect(mappingState) (Message);
 
 //ボタン表示のコンポーネント
