@@ -48,4 +48,37 @@ class Message extends Component {
 
 //ストアのコネクト
 Message = connect(mappingState) (Message);
+
+//ボタン表示のコンポーネント
+class Button extends Component {
+  style = {
+    fontSize:"16pt",
+    padding:"5px 10px"
+  }
+
+  constructor(props){
+    super(props);
+    this.doAction = this.doAction.bind(this);
+  }
+
+  //ボタンクリックでディスパッチを実行
+  doAction(e) {
+    if (e.shiftKey) {
+      this.props.dispatch({ type:'DECREMENT' });
+    } else {
+      this.props.dispatch ({ type:'INCREMENT' });
+    }
+  }
+
+  render() {
+    return (
+      <button style={this.style}
+      onClick={this.doAction}>Click</button>
+    );
+  }
+}
+
+//ストアのコネクト
+Button = connect()(Button);
+
 export default App;
