@@ -30,12 +30,22 @@ function counter(state = state_value, action) {
   }
 }
 
+//ストアの値
+let store = createStore(counter);
 
-
+//表示をレンダリング
 ReactDOM.render(
-    <App msg="Hello App." />,
+  <Provider store={store}>
+    <App />
+    <Provider />
+  </Provider>
   document.getElementById('root')
-);
+)
+
+// ReactDOM.render(
+//     <App msg="Hello App." />,
+//   document.getElementById('root')
+// );
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
