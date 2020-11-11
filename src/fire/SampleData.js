@@ -29,4 +29,20 @@ class Sampledata extends Component {
         });
       });
   }
+
+  //データ表示の生成
+  getTableData(){
+    let result = [];
+    if (this.state.data == null || this.state.data.length == 0){
+      return [<tr key="0"><th>NO DATA.</th></tr>];
+    }
+    for(let i in this.state.data){
+      result.push(<tr key={i}>
+        <th>{this.state.data[i].ID}</th>
+        <td>{this.state.data[i.name]}</td>
+        <td>{this.state.data[i].message}</td>
+      </tr>);
+    }
+    return result;
+  }
 }
