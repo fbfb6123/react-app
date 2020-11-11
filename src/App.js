@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import Rect from './Rect';
-import { connect } from 'react-redux';
-import logo from './logo.svg';
 import './App.css';
+import Sampledata from './fire/SampleData';
+import firebase from "firebase";
 
 //ステートのマッピング
 function mappingState(state) {
