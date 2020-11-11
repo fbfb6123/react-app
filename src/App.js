@@ -16,7 +16,9 @@ var firebaseConfig = {
   measurementId: "G-9VSHFMFXGZ"
 };
 
-
+// Firebaseの初期化
+firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
 
   render(){
     return (
