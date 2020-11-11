@@ -20,11 +20,16 @@ var firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
   firebase.analytics();
 
+  //Appコンポーネント
+  class App extends Component {
+
   render(){
     return (
-      <p style={this.style}>
-        {this.props.message}:{this.props.counter}
-      </p>
+      <div>
+        <h1>Fire</h1>
+        <h2>Sample data.</h2>
+        <Sampledata />
+      </div>
     );
   }
 }
