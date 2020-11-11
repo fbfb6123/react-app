@@ -16,5 +16,17 @@ class Sampledata extends Component {
     this.getFireData();
   }
 
-  
+  // Firebaseからのデータ取得
+  getFireData(){
+    let db = firebase.database();
+    let ref = db.ref('sample/');
+    let self = this;
+    ref.orderByKey()
+      .limitToFirst(10)
+      .on('value', (snapshot)=>{
+        self.setState({
+          data:snapshot.val()
+        });
+      });
+  }
 }
