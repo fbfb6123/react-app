@@ -45,4 +45,16 @@ class Sampledata extends Component {
     }
     return result;
   }
+
+  render(){
+    if (this.state.data.length == 0){
+      this.getFireData();
+    }
+    return (
+      <table><tbody>
+        {this.getTableData()}
+      </tbody></table>
+    )
+  }
 }
+export default Sampledata;
